@@ -3,14 +3,22 @@ import { Avatar } from "@material-ui/core";
 const Header = () => {
   return (
     <>
-      <div className="flex  items-center justify-center">
+      <div className="flex items-center">
         <div>
-          <h1 className="font-bold text-5xl"> Hey 👋 , Find Me Here! </h1>
-          <div className="flex justify-evenly mt-10 pr-10 pl-10">
-            <Avatar src="https://pbs.twimg.com/profile_images/1425561562740256769/wilUuqQX_400x400.jpg" />
-            <div className="flex flex-col items-center">
-              <h1 className="font-bold text-2xl">Khushaal Choithramani</h1>
-              <p className="font-semibold">Web and App Developer</p>
+          <h1 className="font-bold text-5xl text-center">
+            Hey 👋 , Find Me Here!
+          </h1>
+
+          <div className="mt-10 flex sm:justify-evenly sm:flex-row flex-col items-center">
+            <div className=" items-center">
+              <Avatar
+                className=""
+                src="https://pbs.twimg.com/profile_images/1425561562740256769/wilUuqQX_400x400.jpg"
+              />
+            </div>
+            <div className="mt-5 sm:m-0">
+              <h1>Khushaal Choithramani</h1>
+              <p>Web & App Developer</p>
             </div>
           </div>
         </div>
